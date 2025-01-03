@@ -1,8 +1,21 @@
 {% extends 'base.html' %}
+{% load static %}
+
 
     {% block title %}Home{% endblock %}
-    {% block css %}{% endblock %}
+    {% block css %} <link rel="stylesheet" href="{% static 'main/css/homepage.css' %}"> {% endblock %}
 
     {% block content %}
-    <h1>Mindview</h1>
+
+     <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo"><a href="">logo</a></div>
+            <ul>
+                <li>home</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section end -->
+
     {% endblock %}
