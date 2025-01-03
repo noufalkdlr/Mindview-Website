@@ -9,4 +9,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
+    background-color: aqua;
+    height: 5rem;
+}
+
+nav ul{
+    display: flex;
 }
