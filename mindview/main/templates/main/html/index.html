@@ -2,41 +2,62 @@
 {% load static %}
 
 
-    {% block title %}Home{% endblock %}
-    {% block css %} <link rel="stylesheet" href="{% static 'main/css/homepage.css' %}"> {% endblock %}
+{% block title %}Home{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'main/css/homepage.css' %}"> {% endblock %}
 
-    {% block content %}
+{% block content %}
 
-     <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="logo"><a href=""><img src="{% static 'main/images/Mindview-Logo-White.svg'%}" alt=""></a></div>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                ham
-            </div>
-        </nav>
-    </header>
-    <!-- Header Section end -->
-
-    <!-- Hero Section -->
-     <section class="hero">
-        <div class="hero-content">
-            <h1>We Are Mindview</h1>
-            <p>Let’s craft extraordinary stories together and make your brand shine.</p>
-            <div class="btn">
-                <a href="#">Let's Talk</a>
-                <a href="#">Connect With Us</a>
-            </div>
-            
-
+<!-- Header Section -->
+<header>
+    <nav>
+        <div class="logo"><a href=""><img src="{% static 'main/images/Mindview-Logo-White.svg'%}" alt=""></a></div>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            ham
         </div>
-     </section>
+    </nav>
+</header>
+<!-- Header Section end -->
 
-    {% endblock %}
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <h1>We Are Mindview</h1>
+        <p>Let’s craft extraordinary stories together and make your brand shine.</p>
+        <div class="btn">
+            <a href="#">Let's Talk</a>
+            <a href="#">Connect With Us</a>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Hero Section End -->
+
+<!-- About Section -->
+<section id="about">
+    <div class="about-content">
+        <p>At mindview ,we discover the visionaries behind our groundbreak <br>
+            campaigns and see how our passion and expertise can fuel your <br>
+            brand futures.</p>
+
+            <div class="about-btn" >
+                <a href="" >
+                    Our Story
+                </a>
+            </div>
+</section>
+
+
+
+<script src="{% static 'main/javascript/script.js' %}" ></script>
+
+{% endblock %}

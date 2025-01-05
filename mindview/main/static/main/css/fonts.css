@@ -1,4 +1,16 @@
 @font-face{
+    font-family:'helvetica-now' ;
+    src: url('../fonts/HelveticaNowDisplay-Thin.ttf');
+    font-weight: 50;
+}
+
+@font-face{
+    font-family:'helvetica-now' ;
+    src: url('../fonts/HelveticaNowDisplay-Light.ttf');
+    font-weight: 100;
+}
+
+@font-face{
     font-family: 'helvetica-now';
     src: url('../fonts/HelveticaNowDisplay-Regular.ttf');
     font-weight: 200;
