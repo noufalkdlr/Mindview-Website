@@ -170,3 +170,30 @@ nav .hamburger{
     border: 1px solid black;
     margin-top: 200px;
 }
+
+#services{
+    width: 100%;
+}
+
+#services .service-content{
+    padding: 0 20%;
+}
+
+#services .service-content .service-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+#services .service-content .service-cards .service-card{
+    width: 30%;
+}
+
+#services .service-content .service-cards .service-card img{
+    width: 100%;
+    height: auto;
+}
+
+#services .service-content .service-cards .service-text{
+    
+    background-color: aqua;
+}
