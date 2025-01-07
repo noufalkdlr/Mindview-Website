@@ -230,11 +230,14 @@ nav .hamburger{
 }
 
 #portfolio .portfolio-content .portfolio-images{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #portfolio .portfolio-content .portfolio-images .img-box{
+    width: 33.33%;
     position: relative;
 }
 
@@ -301,4 +304,11 @@ nav .hamburger{
 #blog .blog-content .blog-cards .blog-card .blog-image img{
     width: 100%;
     height: auto;
+}
+
+@media (min-width:1920px) {
+    #services .service-content .service-cards .service-card{
+        width: 24rem;
+        padding-bottom: 5%;
+    }
 }
