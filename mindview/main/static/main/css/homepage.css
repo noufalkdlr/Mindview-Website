@@ -219,7 +219,6 @@ nav .hamburger{
 
 
 #portfolio{
-    background-color: #555;
     width: 100%;
     /* grid-template-columns: repeat(3, 1fr);  */
 }
@@ -231,37 +230,75 @@ nav .hamburger{
 }
 
 #portfolio .portfolio-content .portfolio-images{
- /* display: flex;
- flex-wrap: wrap; */
- display: grid;
- grid-template-columns: auto auto auto;
- 
-    
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 #portfolio .portfolio-content .portfolio-images .img-box{
-    /* width: 33.33%; */
-    display: flex;
-    background-color: aqua;
-    position: relative;    
+    position: relative;
 }
-#portfolio .portfolio-content .portfolio-images .img-box h1{
+
+#portfolio .portfolio-content .portfolio-images .img-box h3{
+    color: white;
     position: absolute;
-    bottom: 0;
+    top: 90%;
+    left: 5%;
+    display: none;
 }
-#portfolio .portfolio-content .portfolio-images .img-box img{
+
+#portfolio .portfolio-content .portfolio-images .img-box:hover h3{
+    display: block;
+}
+
+#portfolio .portfolio-content .portfolio-images .img-box .img-zoom{
+    overflow: hidden;
+    display: flex;
+}
+
+#portfolio .portfolio-content .portfolio-images .img-box .img-zoom:hover img{
+    transform: scale(1.05);
+
+}
+
+#portfolio .portfolio-content .portfolio-images .img-box .img-zoom img{
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .portfolio-content a{
+    margin-top: 5%;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    border: 1px solid black;
+}
+
+
+#blog{
+    width: 100%;
+    height: 100vh;
+    background: #555;
+
+}
+
+#blog .blog-content{
+    padding: 0 10%;
+
+}
+#blog .blog-content .blog-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog .blog-content .blog-cards .blog-card{
+    background-color: aqua;
+    width: 25%;
+}
+
+#blog .blog-content .blog-cards .blog-card .blog-image{
+    display: flex;
+}
+
+#blog .blog-content .blog-cards .blog-card .blog-image img{
     width: 100%;
     height: auto;
-}
-
-.p{
-    background-color: #ff8484;
-    width: 500px;
-    height: 500px;
-}
-
-.c{
-    background-color: antiquewhite;
-    width: 250px;
-    height: 250px;
 }

@@ -3,8 +3,7 @@
 
 
 {% block title %}Home{% endblock %}
-{% block css %}
-<link rel="stylesheet" href="{% static 'main/css/homepage.css' %}"> {% endblock %}
+{% block css %} <link rel="stylesheet" href="{% static 'main/css/homepage.css' %}"> {% endblock %}
 
 {% block content %}
 
@@ -142,40 +141,88 @@
     <div class="portfolio-content">
         <div class="portfolio-images">
             <div class="img-box">
-                <h1>hello</h1>
-                <img src="{% static 'main/images/port-1.webp' %}" alt="">
                 
+                <div class="img-zoom">
+                    <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                </div>
+                <h3>Social Media</h3>
             </div>
             <div class="img-box">
-                <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                
+                <div class="img-zoom">
+                    <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                </div>
+                <h3>Social Media</h3>
             </div>
             <div class="img-box">
-                <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                
+                <div class="img-zoom">
+                    <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                </div>
+                <h3>Social Media</h3>
             </div>
             <div class="img-box">
-                <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                
+                <div class="img-zoom">
+                    <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                </div>
+                <h3>Social Media</h3>
             </div>
             <div class="img-box">
-                <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                
+                <div class="img-zoom">
+                    <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                </div>
+                <h3>Social Media</h3>
             </div>
             <div class="img-box">
-                <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                
+                <div class="img-zoom">
+                    <img src="{% static 'main/images/port-1.webp' %}" alt="">
+                </div>
+                <h3>Social Media</h3>
             </div>
+            
             
         </div>
         
             
-        <a href="">Works</a>
+        <a href="">View all Works</a>
 
     </div>
 </section>
 
-<div class="p">
-    <div class="c">
-        
-    </div>
-</div>
+<!-- Portfolio Section End -->
 
-<script src="{% static 'main/javascript/script.js' %}" ></script>
+<!-- Blog Section -->
+
+
+
+<section id="blog" >
+    <div class="blog-content">
+        
+            <h1>Blogs</h1>
+        
+        
+        <div class="blog-cards">
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="{% static 'main/images/blog.webp' %}" alt="">
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="{% static 'main/images/blog.webp' %}" alt="">
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="{% static 'main/images/blog.webp' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 {% endblock %}
