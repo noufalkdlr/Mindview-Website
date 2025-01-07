@@ -278,14 +278,20 @@ nav .hamburger{
 
 #blog{
     width: 100%;
-    height: 100vh;
-    background: #555;
 
 }
 
 #blog .blog-content{
-    padding: 0 10%;
+    padding: 4% 10%;
 
+    
+}
+
+#blog .blog-content h1{
+    font-family: 'helvetica-now';
+    font-weight: 200;
+    margin-bottom: 3%;
+    font-size: 4rem;
 }
 #blog .blog-content .blog-cards{
     display: flex;
@@ -293,7 +299,9 @@ nav .hamburger{
 }
 
 #blog .blog-content .blog-cards .blog-card{
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
     width: 25%;
 }
 
@@ -305,6 +313,32 @@ nav .hamburger{
     width: 100%;
     height: auto;
 }
+
+#blog .blog-content .blog-cards .blog-card .card-text .auth-date{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+
+#blog .blog-content .blog-cards .blog-card .card-text{
+    padding-top: 1rem;
+}
+#blog .blog-content .blog-cards .blog-card .card-text p:nth-child(3){
+    padding-top: .5rem;
+}
+
+#blog .blog-content .btn{
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+#blog .blog-content .btn a{
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    border: 1px solid black;
+}
+
 
 @media (min-width:1920px) {
     #services .service-content .service-cards .service-card{
