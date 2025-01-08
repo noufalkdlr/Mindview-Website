@@ -339,6 +339,10 @@ nav .hamburger{
     border: 1px solid black;
 }
 
+#client-logo .logos .logo-slide img{
+    width: 10%;
+}
+
 
 @media (min-width:1920px) {
     #services .service-content .service-cards .service-card{
