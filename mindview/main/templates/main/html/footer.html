@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'main/css/footer.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+{% block content %}
+    <div id="footer">
+        <div class="footer-content">
+         <div class="top-content">
+            <div>
+                <h2>Subscribe to our newsletter</h2>
+                <p>Don’t miss out on the latest news and trends. Subscribe today!</p>
+            </div>
+            
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text">
+                <button>Subscribe</button>
+            </form>
+
+         </div>
+         <div class="second-row">
+            <div class="logo">
+                <img src="{% static 'main/images/Mindview-Logo-White.svg' %}" alt="">
+                <p>Mindview Creative Solutions, CCMA Complex, 2nd Floor, Anamala Jn., Chalakudy, Kerala, India, 680307</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+                    <a href=""><i class="fa-brands fa-youtube"></i></a> 
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a> 
+                </div>
+            </div>
+            <div class="quick-links">
+                <p>Quick Links</p>
+                <a href="">About Us</a>
+                <a href="">About Us</a>
+                <a href="">About Us</a>
+                <a href="">About Us</a>
+            </div>
+            <div class="service">
+                <p>Quick Links</p>
+                <a href="">About Us</a>
+                <a href="">About Us</a>
+                <a href="">About Us</a>
+                <a href="">About Us</a>
+            </div>
+            <div class="contact">
+                <p>Quick Links</p>
+                <a href="">info@mindviewcreative.com</a>
+                <a href="">+91 7994633737</a>
+            </div>
+
+         </div>
+
+        </div>
+    </div>
+{% endblock %}

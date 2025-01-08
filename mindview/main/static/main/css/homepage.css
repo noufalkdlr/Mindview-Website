@@ -339,6 +339,25 @@ nav .hamburger{
     border: 1px solid black;
 }
 
+@keyframes slide{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+#client-logo .logos{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#client-logo .logos .logo-slide{
+    display: inline-block;
+    animation: 5s slide infinite linear;
+}
+
 #client-logo .logos .logo-slide img{
     width: 10%;
 }

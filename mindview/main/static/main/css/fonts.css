@@ -16,6 +16,13 @@
     font-weight: 200;
 }
 
+
+@font-face {
+    font-family: 'helvetica-now';
+    src: url(../fonts/HelveticaNowDisplay-Medium.ttf);
+    font-weight: 600;
+}
+
 @font-face {
     font-family: 'helvetica-now';
     src: url('../fonts/HelveticaNowDisplay-Black.ttf');
